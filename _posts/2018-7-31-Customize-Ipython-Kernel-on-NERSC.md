@@ -38,7 +38,7 @@ I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will 
   
 ## Customize Jupyter Kernel
   - find `kernel.json` file
-  The `kernel-spec` file should be located under your environment folder ($HOME/.conda/envs/nersc/share/jupyter/kernels/python3/kernel.json).
+  The `kernel-spec` file should be located under your environment folder ($HOME/.conda/envs/nersc/share/jupyter/kernels/python3/kernel.json). Find detailed instruction [here](http://www.nersc.gov/users/data-analytics/data-analytics-2/jupyter-and-rstudio/)
   - edit `kernel.json` file to point python at the python in your`.conda` direcctory. You'll need to change the `"argv"` path to your conda directory like below:
   ```python
   {
@@ -56,4 +56,5 @@ I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will 
   - save this file
 ## Choose your customized kernel
   Open [Jupyterhub](https://jupyter-dev.nersc.gov/user/pshuai/tree/global/project/projectdirs/m1800/jupyter/reach_scale_model/notebook) on Nersc, and switch current kernel to `Python [conda env:nersc]`. Then you should be able to import newly installed package on the kernel. 
+
 
