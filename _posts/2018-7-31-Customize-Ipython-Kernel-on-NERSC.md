@@ -31,11 +31,14 @@ I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will 
   ```
   You can see a list of installed packages using `conda list`.
   
-  - Then, install package (e.g. `ipdb`) in your new environment
+  - Then, install package (e.g. `ipdb`) using `conda` in your new environment
   ```bash
   (nersc) $ conda install -c conda-forge ipdb
   ```
-  
+  - Alternately you can install package using `pip` 
+  ```bash
+  (nersc) $ pip install shapely
+  ```
 ## Customize Jupyter Kernel
   - find `kernel.json` file
   The `kernel-spec` file should be located under your environment folder ($HOME/.conda/envs/nersc/share/jupyter/kernels/python3/kernel.json). Find detailed instruction [here](http://www.nersc.gov/users/data-analytics/data-analytics-2/jupyter-and-rstudio/)
