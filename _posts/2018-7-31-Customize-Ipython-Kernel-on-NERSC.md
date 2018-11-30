@@ -60,4 +60,9 @@ I will talk about customizing your kernel on Jupyter-dev.nersc.gov. Here I will 
 ## Choose your customized kernel
   Open [Jupyterhub](https://jupyter-dev.nersc.gov/user/pshuai/tree/global/project/projectdirs/m1800/jupyter/reach_scale_model/notebook) on Nersc, and switch current kernel to `Python [conda env:nersc]`. Then you should be able to import newly installed package on the kernel. 
 
+---
+# Common issue
+1. **"ImportError: numpy.core.multiarray failed to import" when using virtual envirnment on NERSC**
 
+  This is due to a version conflict.
+  Solution: try `pip install -U numpy` update your numpy version.
